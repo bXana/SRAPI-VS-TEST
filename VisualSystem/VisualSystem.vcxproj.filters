@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Файлы исходного кода">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Заголовочные файлы">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Lua">
+      <UniqueIdentifier>{32e51453-cdef-4846-8778-26971f079d40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LuaAPI">
+      <UniqueIdentifier>{ece1b62c-5ccf-4cac-996e-6895d8a28a01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{b6a54323-0675-4793-8416-b4e58d34f2e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{28dd8e29-7088-4a61-bf93-c0bdf1a75616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\GameObjects">
+      <UniqueIdentifier>{c560becc-c4d6-4808-bcdd-0abd74b798fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\GameObjects\Lua">
+      <UniqueIdentifier>{495fb311-18cd-4c9c-a4ef-5e28a7283011}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VS\DllMain.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="VS\SRAPI.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="VS\ProgramData.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="VS\LogManager.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ConsoleManager.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\FileManager.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\MemoryManager.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ProcessManager.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ThreadManager.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="VS\GameObjects\Galaxy.cpp">
+      <Filter>Файлы исходного кода\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="VS\GameObjects\Star.cpp">
+      <Filter>Файлы исходного кода\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="VS\GameObjects\Ship.cpp">
+      <Filter>Файлы исходного кода\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="VS\GameObjects\Sector.cpp">
+      <Filter>Файлы исходного кода\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="VS\GameObjects\Planet.cpp">
+      <Filter>Файлы исходного кода\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="VS\ExceptionManager.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="VS\ConVar.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="VS\ConsoleCommands.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaAPI\LuaStackException.cpp">
+      <Filter>LuaAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaAPI\LuaManager.cpp">
+      <Filter>LuaAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="VS\GameObjects\Lua\Lua_Galaxy.cpp">
+      <Filter>Файлы исходного кода\GameObjects\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="VS\GameObjects\Lua\Lua_Program.cpp">
+      <Filter>Файлы исходного кода\GameObjects\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="VS\GameObjects\Lua\Lua_Ship.cpp">
+      <Filter>Файлы исходного кода\GameObjects\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="VS\GameObjects\Lua\Lua_Star.cpp">
+      <Filter>Файлы исходного кода\GameObjects\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="VS\GameObjects\Lua\Lua_Sector.cpp">
+      <Filter>Файлы исходного кода\GameObjects\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="VS\GameObjects\Lua\Lua_Planet.cpp">
+      <Filter>Файлы исходного кода\GameObjects\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="VS\ScriptManager.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="VS\GameObjects\Item.cpp">
+      <Filter>Файлы исходного кода\GameObjects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Lua\lua.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\luaconf.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lualib.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lundump.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lvm.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lzio.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\ldebug.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\ldo.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lfunc.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lgc.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\ljumptab.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\llex.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\llimits.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lmem.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lobject.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lopcodes.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lopnames.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lparser.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lprefix.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lstate.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lstring.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\ltable.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\ltm.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lapi.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lauxlib.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lcode.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lctype.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lua.hpp">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaAPI\LuaInclude.hpp">
+      <Filter>LuaAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\SRAPI.hpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\Params.hpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\ProgramData.hpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\LogManager.hpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ConsoleManager.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\FileManager.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\MemoryManager.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ProcessManager.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ThreadManager.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\GameObjects\Galaxy.hpp">
+      <Filter>Файлы исходного кода\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\GameObjects\GameObject.hpp">
+      <Filter>Файлы исходного кода\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\GameObjects\Star.hpp">
+      <Filter>Файлы исходного кода\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\GameObjects\Ship.hpp">
+      <Filter>Файлы исходного кода\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\GameObjects\Sector.hpp">
+      <Filter>Файлы исходного кода\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\GameObjects\Planet.hpp">
+      <Filter>Файлы исходного кода\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\ExceptionManager.hpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\ConVar.hpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\ConsoleCommands.hpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaAPI\LuaStackException.hpp">
+      <Filter>LuaAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaAPI\LuaManager.hpp">
+      <Filter>LuaAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\GameObjects\Lua\Lua_Galaxy.hpp">
+      <Filter>Файлы исходного кода\GameObjects\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\GameObjects\Lua\Lua_Program.hpp">
+      <Filter>Файлы исходного кода\GameObjects\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\GameObjects\Lua\Lua_Ship.hpp">
+      <Filter>Файлы исходного кода\GameObjects\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\GameObjects\Lua\Lua_Star.hpp">
+      <Filter>Файлы исходного кода\GameObjects\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\GameObjects\Lua\Lua_Sector.hpp">
+      <Filter>Файлы исходного кода\GameObjects\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\GameObjects\Lua\Lua_Planet.hpp">
+      <Filter>Файлы исходного кода\GameObjects\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\ScriptManager.hpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\Math.hpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClInclude>
+    <ClInclude Include="VS\GameObjects\Item.hpp">
+      <Filter>Файлы исходного кода\GameObjects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\WinUserSoft\Steam\steamapps\common\Space Rangers HD A War Apart\Log.log" />
+    <None Include="Scripts\userdata\SRData.lua">
+      <Filter>Scripts</Filter>
+    </None>
+  </ItemGroup>
+</Project>

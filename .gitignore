@@ -1,0 +1,11 @@
+
+*.tlog
+*.obj
+*.idb
+*.pdb
+*.dll
+*.manifest
+*.lastbuildstate
+VisualSystem/Debug/VisualSystem.log
+*.cache
+*.ipch

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B5A4AFF3-A000-44DD-B817-154A70643BC2}</ProjectGuid>
+    <RootNamespace>VisualSystem</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>VSAlpha 1.0</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <CallingConvention>StdCall</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>X:\Projects\VisualSystem\Lua;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Lua544.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions>/LTCG /NODEFAULTLIB:library %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <CallingConvention>StdCall</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>X:\Projects\VisualSystem\Lua;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Lua544.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalOptions>/LTCG /NODEFAULTLIB:library %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="LuaAPI\LuaManager.cpp" />
+    <ClCompile Include="LuaAPI\LuaStackException.cpp" />
+    <ClCompile Include="Utils\ConsoleManager.cpp" />
+    <ClCompile Include="Utils\FileManager.cpp" />
+    <ClCompile Include="Utils\MemoryManager.cpp" />
+    <ClCompile Include="Utils\ProcessManager.cpp" />
+    <ClCompile Include="Utils\ThreadManager.cpp" />
+    <ClCompile Include="VS\ConsoleCommands.cpp" />
+    <ClCompile Include="VS\ConVar.cpp" />
+    <ClCompile Include="VS\DllMain.cpp" />
+    <ClCompile Include="VS\ExceptionManager.cpp" />
+    <ClCompile Include="VS\GameObjects\Galaxy.cpp" />
+    <ClCompile Include="VS\GameObjects\Item.cpp" />
+    <ClCompile Include="VS\GameObjects\Lua\Lua_Galaxy.cpp" />
+    <ClCompile Include="VS\GameObjects\Lua\Lua_Planet.cpp" />
+    <ClCompile Include="VS\GameObjects\Lua\Lua_Program.cpp" />
+    <ClCompile Include="VS\GameObjects\Lua\Lua_Sector.cpp" />
+    <ClCompile Include="VS\GameObjects\Lua\Lua_Ship.cpp" />
+    <ClCompile Include="VS\GameObjects\Lua\Lua_Star.cpp" />
+    <ClCompile Include="VS\GameObjects\Planet.cpp" />
+    <ClCompile Include="VS\GameObjects\Sector.cpp" />
+    <ClCompile Include="VS\GameObjects\Ship.cpp" />
+    <ClCompile Include="VS\GameObjects\Star.cpp" />
+    <ClCompile Include="VS\LogManager.cpp" />
+    <ClCompile Include="VS\ProgramData.cpp" />
+    <ClCompile Include="VS\ScriptManager.cpp" />
+    <ClCompile Include="VS\SRAPI.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LuaAPI\LuaInclude.hpp" />
+    <ClInclude Include="LuaAPI\LuaManager.hpp" />
+    <ClInclude Include="LuaAPI\LuaStackException.hpp" />
+    <ClInclude Include="Lua\lapi.h" />
+    <ClInclude Include="Lua\lauxlib.h" />
+    <ClInclude Include="Lua\lcode.h" />
+    <ClInclude Include="Lua\lctype.h" />
+    <ClInclude Include="Lua\ldebug.h" />
+    <ClInclude Include="Lua\ldo.h" />
+    <ClInclude Include="Lua\lfunc.h" />
+    <ClInclude Include="Lua\lgc.h" />
+    <ClInclude Include="Lua\ljumptab.h" />
+    <ClInclude Include="Lua\llex.h" />
+    <ClInclude Include="Lua\llimits.h" />
+    <ClInclude Include="Lua\lmem.h" />
+    <ClInclude Include="Lua\lobject.h" />
+    <ClInclude Include="Lua\lopcodes.h" />
+    <ClInclude Include="Lua\lopnames.h" />
+    <ClInclude Include="Lua\lparser.h" />
+    <ClInclude Include="Lua\lprefix.h" />
+    <ClInclude Include="Lua\lstate.h" />
+    <ClInclude Include="Lua\lstring.h" />
+    <ClInclude Include="Lua\ltable.h" />
+    <ClInclude Include="Lua\ltm.h" />
+    <ClInclude Include="Lua\lua.h" />
+    <ClInclude Include="Lua\lua.hpp" />
+    <ClInclude Include="Lua\luaconf.h" />
+    <ClInclude Include="Lua\lualib.h" />
+    <ClInclude Include="Lua\lundump.h" />
+    <ClInclude Include="Lua\lvm.h" />
+    <ClInclude Include="Lua\lzio.h" />
+    <ClInclude Include="Utils\ConsoleManager.hpp" />
+    <ClInclude Include="Utils\FileManager.hpp" />
+    <ClInclude Include="Utils\MemoryManager.hpp" />
+    <ClInclude Include="Utils\ProcessManager.hpp" />
+    <ClInclude Include="Utils\ThreadManager.hpp" />
+    <ClInclude Include="VS\ConsoleCommands.hpp" />
+    <ClInclude Include="VS\ConVar.hpp" />
+    <ClInclude Include="VS\ExceptionManager.hpp" />
+    <ClInclude Include="VS\GameObjects\Galaxy.hpp" />
+    <ClInclude Include="VS\GameObjects\GameObject.hpp" />
+    <ClInclude Include="VS\GameObjects\Item.hpp" />
+    <ClInclude Include="VS\GameObjects\Lua\Lua_Galaxy.hpp" />
+    <ClInclude Include="VS\GameObjects\Lua\Lua_Planet.hpp" />
+    <ClInclude Include="VS\GameObjects\Lua\Lua_Program.hpp" />
+    <ClInclude Include="VS\GameObjects\Lua\Lua_Sector.hpp" />
+    <ClInclude Include="VS\GameObjects\Lua\Lua_Ship.hpp" />
+    <ClInclude Include="VS\GameObjects\Lua\Lua_Star.hpp" />
+    <ClInclude Include="VS\GameObjects\Planet.hpp" />
+    <ClInclude Include="VS\GameObjects\Sector.hpp" />
+    <ClInclude Include="VS\GameObjects\Ship.hpp" />
+    <ClInclude Include="VS\GameObjects\Star.hpp" />
+    <ClInclude Include="VS\LogManager.hpp" />
+    <ClInclude Include="VS\Math.hpp" />
+    <ClInclude Include="VS\Params.hpp" />
+    <ClInclude Include="VS\ProgramData.hpp" />
+    <ClInclude Include="VS\ScriptManager.hpp" />
+    <ClInclude Include="VS\SRAPI.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\WinUserSoft\Steam\steamapps\common\Space Rangers HD A War Apart\Log.log" />
+    <None Include="Scripts\userdata\SRData.lua" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

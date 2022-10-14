@@ -1,0 +1,75 @@
+﻿Построение начато 12.10.2022 10:56:22.
+     1>Проект "X:\Projects\VisualSystem\VisualSystem.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "Release\VisualSystem.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         X:\WinUserSoft\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _WINDLL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gz /TP /analyze- /errorReport:prompt LuaAPI\LuaManager.cpp LuaAPI\LuaStackException.cpp Utils\ConsoleManager.cpp Utils\FileManager.cpp Utils\MemoryManager.cpp Utils\ProcessManager.cpp Utils\ThreadManager.cpp VS\ConsoleCommands.cpp VS\ConVar.cpp VS\DllMain.cpp VS\ExceptionManager.cpp VS\GameObjects\Galaxy.cpp VS\GameObjects\Item.cpp VS\GameObjects\Lua\Lua_Galaxy.cpp VS\GameObjects\Lua\Lua_Planet.cpp VS\GameObjects\Lua\Lua_Program.cpp VS\GameObjects\Lua\Lua_Sector.cpp VS\GameObjects\Lua\Lua_Ship.cpp VS\GameObjects\Lua\Lua_Star.cpp VS\GameObjects\Planet.cpp VS\GameObjects\Sector.cpp VS\GameObjects\Ship.cpp VS\GameObjects\Star.cpp VS\LogManager.cpp VS\ProgramData.cpp VS\ScriptManager.cpp VS\SRAPI.cpp
+         LuaManager.cpp
+         LuaStackException.cpp
+         ConsoleManager.cpp
+         FileManager.cpp
+         MemoryManager.cpp
+         ProcessManager.cpp
+         ThreadManager.cpp
+         ConsoleCommands.cpp
+         ConVar.cpp
+         DllMain.cpp
+         ExceptionManager.cpp
+         Galaxy.cpp
+         Item.cpp
+         Lua_Galaxy.cpp
+         Lua_Planet.cpp
+         Lua_Program.cpp
+         Lua_Sector.cpp
+         Lua_Ship.cpp
+         Lua_Star.cpp
+         Planet.cpp
+         Компиляция...
+         Sector.cpp
+         Ship.cpp
+         Star.cpp
+         LogManager.cpp
+         ProgramData.cpp
+         ScriptManager.cpp
+         SRAPI.cpp
+       Link:
+         X:\WinUserSoft\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"X:\Projects\VisualSystem\Release\VSAlpha 1.0.dll" /NOLOGO /LIBPATH:X:\Projects\VisualSystem\Lua Lua544.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\VSAlpha 1.0.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"X:\Projects\VisualSystem\Release\VSAlpha 1.0.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"X:\Projects\VisualSystem\Release\VSAlpha 1.0.lib" /MACHINE:X86 /DLL Release\LuaManager.obj
+         Release\LuaStackException.obj
+         Release\ConsoleManager.obj
+         Release\FileManager.obj
+         Release\MemoryManager.obj
+         Release\ProcessManager.obj
+         Release\ThreadManager.obj
+         Release\ConsoleCommands.obj
+         Release\ConVar.obj
+         Release\DllMain.obj
+         Release\ExceptionManager.obj
+         Release\Galaxy.obj
+         Release\Item.obj
+         Release\Lua_Galaxy.obj
+         Release\Lua_Planet.obj
+         Release\Lua_Program.obj
+         Release\Lua_Sector.obj
+         Release\Lua_Ship.obj
+         Release\Lua_Star.obj
+         Release\Planet.obj
+         Release\Sector.obj
+         Release\Ship.obj
+         Release\Star.obj
+         Release\LogManager.obj
+         Release\ProgramData.obj
+         Release\ScriptManager.obj
+         Release\SRAPI.obj /LTCG /NODEFAULTLIB:library 
+         Создание кода
+         Создание кода завершено
+         VisualSystem.vcxproj -> X:\Projects\VisualSystem\Release\VSAlpha 1.0.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"X:\Projects\VisualSystem\Release\VSAlpha 1.0.dll;#2" /manifest "Release\VSAlpha 1.0.dll.intermediate.manifest"
+       FinalizeBuildStatus:
+         Файл "Release\VisualSystem.unsuccessfulbuild" удаляется.
+         Обращение к "Release\VisualSystem.lastbuildstate".
+     1>Построение проекта "X:\Projects\VisualSystem\VisualSystem.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:08.76

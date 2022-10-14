@@ -3,7 +3,7 @@
 GameInformation = {
 	ProcessName	  = "Rangers.exe",
 	ConsoleEnable = true,
-	-- Будут ли выполняться зарегестрированные скрипты
+	-- Будут ли выполняться зарегистрированные скрипты
 	-- Использовать только в Universe модификации
 	RequiredScriptsExecute = true 
 }

@@ -9,3 +9,10 @@
 VisualSystem/Debug/VisualSystem.log
 *.cache
 *.ipch
+*.sln
+*.sdf
+*.vcxproj
+*.suo
+*.sdf
+VisualSystem/Release/VisualSystem.log
+*.vcxproj
